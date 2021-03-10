@@ -14,7 +14,7 @@ public abstract class Piece {
 		return board;
 	}
 	
-	public abstract boolean[][] possibleMoves();
+	public abstract boolean[][] possibleMoves();//rook methods=método que faz um gancho com a sub classe
 	
 	public boolean possibleMove(Position position) {
 		return possibleMoves()[position.getRow()][position.getColumn()];
